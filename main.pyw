@@ -60,12 +60,12 @@ class MainWindow(QWidget):
         file_output_location.textEdited.connect(self.save_settings)
 
         # Add the widgets to the grid
-        grid.addWidget(title_match_regex_label, 0, 0)
-        grid.addWidget(window_match_regex_label, 1, 0)
+        grid.addWidget(window_match_regex_label, 0, 0)
+        grid.addWidget(title_match_regex_label, 1, 0)
         grid.addWidget(file_output_regex_label, 2, 0)
         grid.addWidget(file_output_location_label, 3, 0)
-        grid.addWidget(title_match_regex, 0, 1)
-        grid.addWidget(window_match_regex, 1, 1)
+        grid.addWidget(window_match_regex, 0, 1)
+        grid.addWidget(title_match_regex, 1, 1)
         grid.addWidget(file_output_regex, 2, 1)
         grid.addWidget(file_output_location, 3, 1)
 
