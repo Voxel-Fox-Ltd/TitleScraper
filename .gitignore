@@ -1,5 +1,5 @@
 __pycache__/
-_*
+__*
 main.spec
 build/
 dist/
