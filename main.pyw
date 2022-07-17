@@ -86,7 +86,6 @@ class MainWindow(QWidget):
         Save the settings of the script.
         """
 
-        _log.info(f"Saved settings 1 ({self.settings!r})")
         self.settings = {
             "title_match_regex": self.title_match_regex.text(),
             "window_match_regex": self.window_match_regex.text(),
