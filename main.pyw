@@ -25,9 +25,6 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        # Load up the settings file
-        self.settings: TitleScraperSettings = self.load_settings()
-
         # Set title - it WILL be changed but that's fine
         self.setWindowTitle("TitleScraper")
 
@@ -46,6 +43,10 @@ class MainWindow(QWidget):
         self.window_match_regex = window_match_regex = QLineEdit()
         self.file_output_regex = file_output_regex = QLineEdit()
         self.file_output_location = file_output_location = QLineEdit()
+
+        # Load up the settings file
+        self.settings: TitleScraperSettings = None
+        self.settings = self.load_settings()
 
         # Set default content for the inputs
         title_match_regex.setText(self.settings['title_match_regex'])
